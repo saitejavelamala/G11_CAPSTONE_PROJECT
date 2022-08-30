@@ -1,0 +1,54 @@
+.sideNav {
+  margin: 10px;
+  border: 1px solid #555;
+  margin-left: 20px;
+}
+.link{
+  text-decoration: none;
+  font-style: italic;
+  font-style: oblique;
+  width: 200%;
+  margin-left:60px;
+  color:rgb(53, 52, 52)
+}
+mat-drawer{
+  margin: 10px;
+  padding: 40px;
+}
+.questions {
+  max-width: 800px;
+  margin: 30px;
+}
+#categories{
+  margin-top: 60px;
+
+}
+h2,
+h6 {
+  margin-left: 30px;
+}
+li{
+  font-size: 20px;
+  font-weight: bold;
+}
+#ask {
+  margin-left: 700px;
+}
+
+.questionTag{
+  
+  margin-left: 10px;
+  padding: 5px;
+  color: rgb(53, 52, 52)
+}
+
+.answer{
+  color: rgb(53, 52, 52)
+}
+.answer{
+  float: right;
+}
+.yourAnswer{
+  width: 100%;
+  margin-top: 10px;
+}

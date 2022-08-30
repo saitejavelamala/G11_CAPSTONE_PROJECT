@@ -1,0 +1,54 @@
+<div class="body">
+  <div class="login bg-dark">
+    <form
+      ngNativeValidate
+      #userloginform="ngForm"
+      (ngSubmit)="Login(userloginform.value)"
+    >
+      <div class="email">
+        <label for="login" class="container"> <h2><b>Login</b></h2> </label><br />
+        <label for="exampleInputEmail1" class="form-label text-light">Email </label>
+        <input
+          ngModel
+          name="email"
+          type="email"
+          class="form-control"
+          placeholder="Enter Your Email Id"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          required
+        />
+        <br />
+        <label for="exampleInputPassword1" class="form-label text-light">Password</label>
+        <input
+          ngModel
+          name="password"
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          required
+          placeholder="Please Enter atleast 8 charactors"
+        />
+      </div>
+      <div class="loginButton">
+        <button type="submit" class="btn btn-outline-light" [disabled]="userloginform.invalid">Login</button>
+      </div>
+    </form>
+    <a
+      routerLink="/register"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <p>Don't Have Account Yet? Register here!</p></a
+    >
+  </div>
+  <li>
+    <a
+      routerLink="/admin-login"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <p class="text-dark"><b>admin?, Login here!</b></p>
+    </a>
+  </li>
+</div>

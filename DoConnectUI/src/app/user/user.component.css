@@ -1,0 +1,17 @@
+#btn-chat{
+ 
+  margin: 0 60px;
+    
+    text-align: center;
+	float: right;
+	background-color:rgb(223, 172, 8);
+	color:#FFF;
+	box-shadow: 2px 2px 3px #999;
+  
+}
+h4{
+	text-align: left;
+	font-style: italic;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: rgb(53, 52, 52);
+}

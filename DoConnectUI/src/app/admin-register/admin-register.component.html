@@ -1,0 +1,81 @@
+<div class="body">
+  <div class="register bg-dark">
+    <form
+      ngNativeValidate
+      #adminregisterform="ngForm"
+      (ngSubmit)="Register(adminregisterform.value)"
+    >
+      <label for="register" class="container">
+        <h2><b>Register As Admin</b></h2> </label
+      ><br />
+      <div class="row g-3">
+        <div class="col">
+          <input
+            ngModel
+            name="fName"
+            type="text"
+            class="form-control"
+            placeholder="Enter your First name"
+            aria-label="First name"
+            required
+          />
+        </div>
+        <div class="col">
+          <input
+            ngModel
+            name="lName"
+            type="text"
+            class="form-control"
+            placeholder="Enter your Last name"
+            aria-label="Last name"
+            required
+          />
+        </div>
+      </div>
+      <br />
+      <div class="mb-3">
+        <input
+          ngModel
+          name="email"
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="Enter you Email Id"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          ngModel
+          name="password"
+          type="password"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="Password"
+          required
+          minlength="8"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          ngModel
+          name="mNumber"
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="Mobile Number"
+          required
+          minlength="10"
+          maxlength="10"
+        />
+      </div>
+
+      <div class="registerButton">
+        <button type="submit" class="btn btn-outline-light me-3" [disabled]="adminregisterform.invalid">
+          Register
+        </button>
+        <input class="btn btn-outline-light" type="reset" value="Reset" />
+      </div>
+    </form>
+  </div>
+</div>
